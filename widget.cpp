@@ -7,6 +7,7 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->StuLoad,&QPushButton::clicked,this,&Widget::on_StuLoad_clicked);
+    connect(ui->TeaLoad,&QPushButton::clicked,this,&Widget::on_TeaLoad_clicked);
 }
 
 Widget::~Widget()
@@ -17,5 +18,11 @@ Widget::~Widget()
 void Widget::on_StuLoad_clicked()
 {
     stu_load->show();
+}
+
+
+void Widget::on_TeaLoad_clicked()
+{
+    tea_load->show();
 }
 

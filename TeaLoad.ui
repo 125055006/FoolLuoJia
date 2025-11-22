@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>StuLoad</class>
- <widget class="QWidget" name="StuLoad">
+ <class>TeaLoad</class>
+ <widget class="QWidget" name="TeaLoad">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>364</width>
+    <height>330</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,22 +16,22 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>120</x>
      <y>40</y>
      <width>121</width>
-     <height>41</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;学生登录&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;教师登录&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Cancel">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>240</y>
-     <width>80</width>
+     <x>40</x>
+     <y>260</y>
+     <width>81</width>
      <height>21</height>
     </rect>
    </property>
@@ -42,9 +42,9 @@
   <widget class="QPushButton" name="Load">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>240</y>
-     <width>80</width>
+     <x>180</x>
+     <y>260</y>
+     <width>81</width>
      <height>21</height>
     </rect>
    </property>
@@ -55,8 +55,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>110</y>
+     <x>110</x>
+     <y>120</y>
      <width>132</width>
      <height>98</height>
     </rect>
@@ -72,11 +72,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="text">
-         <string>请输入账号</string>
-        </property>
-       </widget>
+       <widget class="QLineEdit" name="IDedit"/>
       </item>
      </layout>
     </item>
@@ -103,11 +99,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2">
-        <property name="text">
-         <string>请输入密码</string>
-        </property>
-       </widget>
+       <widget class="QLineEdit" name="Passwardedit"/>
       </item>
      </layout>
     </item>

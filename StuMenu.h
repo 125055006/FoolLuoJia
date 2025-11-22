@@ -3,8 +3,8 @@
 
 #include <QWidget>
 
-namespace Ui {
-class StuMenu;
+    namespace Ui {
+    class StuMenu;
 }
 
 class StuMenu : public QWidget
@@ -14,6 +14,9 @@ class StuMenu : public QWidget
 public:
     explicit StuMenu(QWidget *parent = nullptr);
     ~StuMenu();
+
+private slots:
+    void on_Return_clicked();
 
 private:
     Ui::StuMenu *ui;

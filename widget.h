@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include"StuLoad.h"
+#include"TeaLoad.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Widget;
@@ -20,8 +21,11 @@ public:
 private slots:
     void on_StuLoad_clicked();
 
+    void on_TeaLoad_clicked();
+
 private:
     Ui::Widget *ui;
     StuLoad *stu_load=new StuLoad;
+    TeaLoad *tea_load=new TeaLoad;
 };
 #endif // WIDGET_H

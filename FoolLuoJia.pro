@@ -11,17 +11,23 @@ CONFIG += c++17
 SOURCES += \
     StuLoad.cpp \
     StuMenu.cpp \
+    TeaLoad.cpp \
+    TeaMenu.cpp \
     main.cpp \
     widget.cpp
 
 HEADERS += \
     StuLoad.h \
     StuMenu.h \
+    TeaLoad.h \
+    TeaMenu.h \
     widget.h
 
 FORMS += \
     StuLoad.ui \
     StuMenu.ui \
+    TeaLoad.ui \
+    TeaMenu.ui \
     widget.ui
 
 # Default rules for deployment.

@@ -2,9 +2,9 @@
 #define STULOAD_H
 
 #include <QWidget>
-
-namespace Ui {
-class StuLoad;
+#include"StuMenu.h"
+    namespace Ui {
+    class StuLoad;
 }
 
 class StuLoad : public QWidget
@@ -18,9 +18,11 @@ public:
 private slots:
     void on_Cancel_clicked();
 
+    void on_Load_clicked();
+
 private:
     Ui::StuLoad *ui;
+    StuMenu *stu_menu=new StuMenu;
 };
 
 #endif // STULOAD_H
-
