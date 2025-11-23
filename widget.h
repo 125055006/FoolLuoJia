@@ -2,9 +2,12 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include<QTcpServer>
 #include<QTcpSocket>
-#include"StuLoad.h"
-#include"TeaLoad.h"
+#include<QDebug>
+
+#define PORT 9988
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Widget;
@@ -18,16 +21,9 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-
 private slots:
-    void on_StuLoad_clicked();
-
-    void on_TeaLoad_clicked();
 
 private:
     Ui::Widget *ui;
-    StuLoad *stu_load=new StuLoad;
-    TeaLoad *tea_load=new TeaLoad;
-
 };
 #endif // WIDGET_H
