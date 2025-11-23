@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include<QTcpSocket>
 #include"StuLoad.h"
 #include"TeaLoad.h"
 QT_BEGIN_NAMESPACE
@@ -27,5 +28,6 @@ private:
     Ui::Widget *ui;
     StuLoad *stu_load=new StuLoad;
     TeaLoad *tea_load=new TeaLoad;
+
 };
 #endif // WIDGET_H
