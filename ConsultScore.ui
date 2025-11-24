@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConsultScore</class>
+ <widget class="QWidget" name="ConsultScore">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>372</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;你好，你的成绩如下：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>201</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>3</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <column/>
+   <column/>
+   <item row="0" column="0">
+    <property name="text">
+     <string>高等数学</string>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>高级语言程序设计</string>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>英语</string>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

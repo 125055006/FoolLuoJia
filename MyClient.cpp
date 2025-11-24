@@ -23,7 +23,7 @@ void MyClient::sendMessage(const QString &message)
 }
 void MyClient::onConnected()
 {
-    qDebug()<<"连接成功";
+    qDebug()<<"连接成功("<<socket->peerAddress().toString()<<")";
     sendMessage("welcome");
 }
 void MyClient::onReadyRead()
@@ -35,4 +35,15 @@ void MyClient::onReadyRead()
 void MyClient::onErrorOccurred(QAbstractSocket::SocketError error)
 {
     qDebug()<<"连接错误"<<socket->errorString();
+}
+void MyClient::sendData(const QByteArray& data)
+{
+    if(socket->state()==QAbstractSocket::ConnectedState)    //判断是否已连接
+    {
+        socket->write(data);    //发送二进制数据
+    }
+    else
+    {
+        qDebug()<<"服务器连接异常";
+    }
 }

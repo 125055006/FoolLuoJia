@@ -1,74 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>StuMenu</class>
- <widget class="QWidget" name="StuMenu">
+ <class>TeaMenu</class>
+ <widget class="QWidget" name="TeaMenu">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>415</width>
-    <height>337</height>
+    <width>320</width>
+    <height>326</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>0</y>
-     <width>101</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;欢迎你&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>90</y>
-     <width>196</width>
-     <height>192</height>
+     <x>10</x>
+     <y>10</y>
+     <width>194</width>
+     <height>33</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;欢迎您，&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;老师&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>166</width>
+     <height>162</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QPushButton" name="con_score">
+       <widget class="QPushButton" name="RecordIFM">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
-         <string>成绩查询</string>
+         <string>录入信息</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="pushButton_9">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -77,17 +90,17 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="pushButton_8">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -100,17 +113,17 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="pushButton_5">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -122,14 +135,14 @@
        <widget class="QPushButton" name="pushButton_3">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -138,17 +151,17 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_9">
+       <widget class="QPushButton" name="pushButton_4">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -161,17 +174,17 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="pushButton_2">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -180,17 +193,17 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="pushButton_6">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -202,14 +215,14 @@
        <widget class="QPushButton" name="pushButton_7">
         <property name="minimumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>60</width>
-          <height>60</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
@@ -224,27 +237,14 @@
   <widget class="QPushButton" name="Return">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>40</y>
+     <x>230</x>
+     <y>20</y>
      <width>80</width>
      <height>18</height>
     </rect>
    </property>
    <property name="text">
-    <string>退出登录</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Pcenter">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>10</y>
-     <width>80</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>个人中心</string>
+    <string>退出</string>
    </property>
   </widget>
  </widget>

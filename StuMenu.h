@@ -2,7 +2,8 @@
 #define STUMENU_H
 
 #include <QWidget>
-
+#include"ConsultScore.h"
+#include"personcenter.h"
     namespace Ui {
     class StuMenu;
 }
@@ -17,9 +18,14 @@ public:
 
 private slots:
     void on_Return_clicked();
+    void on_con_score_clicked();
+
+    void on_Pcenter_clicked();
 
 private:
     Ui::StuMenu *ui;
+    ConsultScore *con_score;
+    PersonCenter *go_center;
 };
 
 #endif // STUMENU_H
