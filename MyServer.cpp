@@ -32,8 +32,8 @@ void MyServer::onClientReadyRead()
     QTcpSocket *clientSocket=qobject_cast<QTcpSocket*>(sender());  //获取指针
     if(!clientSocket) return;
     QByteArray data=clientSocket->readAll();
-    QString message=QString::fromUtf8(data);
-    qDebug()<<"收到来自"<<clientSocket->peerAddress().toString()<<"的消息："<<message;//接收信息
+    qDebug()<<"收到大小为"<<data.size()<<"的数据";
+    sendToAllClients(data);
 }
 void MyServer::onClientDisconnected()
 {
@@ -47,6 +47,17 @@ void MyServer::onClientDisconnected()
 void MyServer::sendToAllClients(const QString &message)
 {
     QByteArray data=message.toUtf8();
+    for(QTcpSocket *client:clients)
+    {
+        if(client->state()==QTcpSocket::ConnectedState)
+        {
+            client->write(data);
+        }
+    }
+}
+void MyServer::sendToAllClients(const QByteArray &data)
+{
+    qDebug()<<"开始转发";
     for(QTcpSocket *client:clients)
     {
         if(client->state()==QTcpSocket::ConnectedState)
