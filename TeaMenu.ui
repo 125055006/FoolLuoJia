@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -39,7 +39,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -52,7 +52,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QPushButton" name="RecordIFM">
+       <widget class="QPushButton" name="pushButton">
         <property name="minimumSize">
          <size>
           <width>50</width>
@@ -66,7 +66,7 @@
          </size>
         </property>
         <property name="text">
-         <string>录入信息</string>
+         <string>PushButton</string>
         </property>
        </widget>
       </item>
@@ -233,19 +233,6 @@
      </layout>
     </item>
    </layout>
-  </widget>
-  <widget class="QPushButton" name="Return">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>20</y>
-     <width>80</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>退出</string>
-   </property>
   </widget>
  </widget>
  <resources/>
